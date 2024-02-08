@@ -1,0 +1,51 @@
+body{
+    background-color: white;
+    color: black;
+}
+.App{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    top: 50px;
+    position: relative;
+    font-family: cursive;
+}
+form{
+    display: grid;
+    border-radius: 50px;
+    box-shadow: 3px 3px 0 0 ;
+    width: 550px;
+    height: 350px;
+    position: relative;
+    left: 450px;
+    background-color: rgb(143, 143, 143);
+    height: 100%;
+    gap: 5px;
+    top: 100px;
+}
+form input{
+    width: 350px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border: 2px black solid;
+    position: relative;
+    left: 100px;
+    border-radius: 5px;
+}
+form button{
+    width: 350px;
+    left: 100px;
+    position: relative;
+}
+p{
+    text-align: center;
+    color: red;
+}
+h2{
+    text-align: center;
+    color: green;
+}
