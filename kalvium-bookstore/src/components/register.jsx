@@ -7,7 +7,7 @@ function register() {
   const { register, handleSubmit, formState: { errors },getValues } = useForm();
   const [Registration,setregistration] = useState(false)
   const navigate = useNavigate()
-  const Submit=(e)=>{
+  const Submit=()=>{
     setregistration(true)
     setTimeout(()=>{
       navigate("/")
@@ -16,7 +16,7 @@ function register() {
   return (
     <div className="App">
       <h1>Create Account</h1>
-      <form onClick={handleSubmit(Submit)}>
+      <form onSubmit={handleSubmit(Submit)}>
         <br />
       {Registration && <h2 className='Registration'>Registration Successful</h2>}
         <input type="text"  placeholder='Your Name' {...register("Name",{required:'Name is required',minLength:{value:3,message:'Name should have aleast 3 characters'},maxLength:{value:30,message:'Name should not have more than 30 characters'}})}/>
